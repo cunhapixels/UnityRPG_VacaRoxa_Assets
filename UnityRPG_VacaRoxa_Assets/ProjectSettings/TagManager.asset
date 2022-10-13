@@ -47,3 +47,6 @@ TagManager:
   - name: FG
     uniqueID: 313188723
     locked: 0
+  - name: Entities
+    uniqueID: 1251004561
+    locked: 0
