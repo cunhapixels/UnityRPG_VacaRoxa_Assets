@@ -12,12 +12,10 @@ public class PlayerController : MonoBehaviour {
 
     Vector2 myVelocity;
 
-    // Start is called before the first frame update
     void Start() {
-        
+        Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
     void Update() {
         float hInput = Input.GetAxisRaw("Horizontal");
         float vInput = Input.GetAxisRaw("Vertical");
@@ -38,6 +36,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         myVelocity = new Vector2(hInput * moveSpeed, vInput * moveSpeed);
-        rb.velocity = Vector2.Lerp(rb.velocity, myVelocity, 0.05f);
+        rb.velocity = Vector2.Lerp(rb.velocity, myVelocity, 0.3f);
     }
 }

@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DaggerController : MonoBehaviour {
-    [SerializeField] Rigidbody2D rb;
+    [SerializeField] float damage;
     Quaternion currentRotation;
 
-    // Start is called before the first frame update
-    void Start() {
-        
-    }
-
-    // Update is called once per frame
     void Update() {
         if (transform.position.x < -10 || transform.position.x > 10) {
             Destroy(this.gameObject);
         }
 
-        currentRotation.eulerAngles += new Vector3(0f, 0f, 2.5f);
+        currentRotation.eulerAngles += new Vector3(0f, 0f, 15f);
         transform.rotation = currentRotation;
+    }
+
+    public float GetDamage() {
+        return damage;
     }
 }
