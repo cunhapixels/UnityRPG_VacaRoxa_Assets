@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1101857595534546624}
   - component: {fileID: 1101857595534546625}
-  - component: {fileID: 1101857595534546638}
   - component: {fileID: 1101857595534546639}
   - component: {fileID: 1101857595534546627}
+  - component: {fileID: 2089339003}
+  - component: {fileID: 2089339010}
+  - component: {fileID: 2089339011}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Slime
@@ -60,24 +62,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.61, y: 0.59}
   m_EdgeRadius: 0
---- !u!58 &1101857595534546638
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101857595534546636}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.2
 --- !u!50 &1101857595534546639
 Rigidbody2D:
   serializedVersion: 4
@@ -115,6 +101,47 @@ MonoBehaviour:
   health: 5
   red: 0
   canTakeDamage: 1
+--- !u!114 &2089339003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101857595534546636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2f5089141917b4c8989ebf33036d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2089339010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101857595534546636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c8a92a239d0254a802d402ab96c845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 0
+  maxShield: 0
+  currentShield: 0
+--- !u!114 &2089339011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101857595534546636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d70d81ce12e4c48a6e317941d12767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 5
 --- !u!1 &1101857596506546942
 GameObject:
   m_ObjectHideFlags: 0
