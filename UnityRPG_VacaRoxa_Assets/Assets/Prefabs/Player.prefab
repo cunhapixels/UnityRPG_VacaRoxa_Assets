@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 4090936454096564977}
   - component: {fileID: 4090936454096564976}
   - component: {fileID: 4090936454096564979}
+  - component: {fileID: 2074219491}
+  - component: {fileID: 2074219496}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +56,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &4090936454096564976
 CapsuleCollider2D:
@@ -87,6 +89,35 @@ MonoBehaviour:
   rb: {fileID: 4090936454096564977}
   moveSpeed: 5
   mySprite: {fileID: 4090936455019645731}
+  myDagger: {fileID: 5505779768061748653, guid: a35681dea780a2d46814740cfb620e9d, type: 3}
+  daggerSpeed: 8
+--- !u!114 &2074219491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090936454096564978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c8a92a239d0254a802d402ab96c845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxShield: 0
+--- !u!114 &2074219496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4090936454096564978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d70d81ce12e4c48a6e317941d12767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 25
 --- !u!1 &4090936455019645731
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,8 +189,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1251004561
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1279554501, guid: 135e18dd3cfcc8f42ad75fd27a67d7d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
